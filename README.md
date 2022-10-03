@@ -1,5 +1,7 @@
 # Proyact - Lista tareas
 
+Practica de componenetes de react, usando reac-bootstrap y localstorage
+
 # Demo
 
 # Comandos para usar el proyecto
@@ -11,5 +13,5 @@ npm start`
 
 # Dependencias
 
-1- react-bootstrap 2.
-2- react
+1- react-bootstrap v2.
+2- Bootstrap v5.2
