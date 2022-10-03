@@ -1,14 +1,13 @@
 import React from 'react'
 import { ListGroup } from 'react-bootstrap'
+import { ItemTarea } from './ItemTarea'
 
-export const ListaTarea = () => {
+export const ListaTarea = ({arregloTareas, borrarTarea}) => {
   return (
     <ListGroup>
-        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-        <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-        <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+        {
+            arregloTareas.map((tarea,i)=> <ItemTarea key={i} nombreTarea={tarea} borrarTarea={borrarTarea}></ItemTarea>)
+        }
     </ListGroup>
   )
 }
